@@ -14,5 +14,6 @@
 
 # custom
 tmp
+.idea/*
 vendor/*
 !vendor/vendor.json
