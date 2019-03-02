@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# golang .gitignore template
-=======
->>>>>>> ac47094d162d32af0fce331ba42f63d4e497deb4
 # Binaries for programs and plugins
 *.exe
 *.exe~
@@ -14,12 +10,9 @@
 
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
-<<<<<<< HEAD
 
 # custom
 tmp
 .idea/*
 vendor/*
 !vendor/vendor.json
-=======
->>>>>>> ac47094d162d32af0fce331ba42f63d4e497deb4
