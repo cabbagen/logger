@@ -1,0 +1,29 @@
+
+syntax = "proto2";
+
+option java_multiple_files = true;
+
+option java_package = "io.grpc.examples.logger";
+
+option java_outer_classname = "LoggerProto";
+
+package logger;
+
+service LoggerService {
+	rpc AllLog (LoggerRequest) returns (LoggerReply) {}
+	rpc InfoLog (LoggerRequest) returns (LoggerReply) {}
+	rpc WarnLog (LoggerRequest) returns (LoggerReply) {}
+	rpc DebugLog (LoggerRequest) returns (LoggerReply) {}
+	rpc ErrorLog (LoggerRequest) returns (LoggerReply) {}
+}
+
+message LoggerRequest {	
+	required string appid = 1;
+	required string message = 2;
+	optional string category = 3;
+}
+
+message LoggerReply {
+	required string code = 1;
+	optional string message = 2;
+}
