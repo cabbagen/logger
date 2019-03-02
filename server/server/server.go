@@ -68,17 +68,3 @@ func createLogger(level string, in *pb.LoggerRequest) interface{} {
 	
 	return nil
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
